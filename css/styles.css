@@ -1,3 +1,9 @@
+*,
+*::before
+*::after {
+    box-sizing: border-box;
+}
+
 body {
 font-family: "Roboto", sans-serif;
 color: var(--SLATE, #434455);
@@ -9,6 +15,7 @@ background-color: #FFF;
     display: flex;
     flex-direction: column;
     width: 1158px;
+    justify-content: center;
 }
 
 main {
@@ -24,11 +31,22 @@ h6,
 p { 
     margin: 0;
 }
+
+.section {
+    padding-top: 120px;
+    padding-right: 0;
+    padding-bottom: 120px;
+    padding-left: 0;
+}
 /*  Шапка веб-сторінки  */
+
+header {
+    width: 1440px;
+    height: 72px;
+}
 .container {
     display:flex;
-
-
+    border: 1440px;
 }
 
 nav {
@@ -36,7 +54,13 @@ nav {
 }
 
 .nav-list 
-{ display: flex;}
+{ display: flex;
+margin-top: 24px;
+margin-right: 332px;
+margin-bottom: 24px;
+gap: 40px;
+
+}
 
 .logo {
     color: var(--IRIS, #4D5AE5);
@@ -48,15 +72,20 @@ nav {
         text-transform: uppercase;
         text-decoration: none;
         line-height: 1.17;
+        display: flex;
+        margin-top: 24px;
+        margin-right: 76px;
+        margin-bottom: 24px;
+        margin-left: 156px;
 }
 .logo-top {
-    color: var(--NAVY-BLUE, #2E2F42);
-}
+    color: var(--NAVY-BLUE, #2E2F42);}
 
 ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
 }
 .header-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -74,6 +103,11 @@ ul, ol {
 }
 .address-link { font-style: normal;
     display: flex;
+ flex-direction: row;
+    margin-top: 24px;
+        margin-right: 156px;
+        margin-bottom: 24px;
+        gap: 40px;
 }
 
  .adresses-link-subtitle {
@@ -84,14 +118,21 @@ ul, ol {
         letter-spacing: 0.32px;
         text-decoration: none;
         line-height: 1.5;
-     
+   
+      
 }
 .adresses-link-item .adresses-link-subtitle:hover { color:  #404bbf}
 .adresses-link-item .adresses-link-subtitle:focus { color:  #404bbf}
 
 /*   Замовити послуги */
 .business-section {
-    background-color:var(--NAVY-BLUE, #2E2F42);}
+    background-color:var(--NAVY-BLUE, #2E2F42);
+    width: 1440px;
+    height: 600px;
+}
+.business-container {
+        display: flex;}
+                 
     .main-title {
     color: var(--WHITE, #FFF);
         text-align: center;
@@ -101,6 +142,12 @@ ul, ol {
         line-height: 60px;
         letter-spacing: 1.12px;
         line-height: 1.07 ;
+        width: 496px;
+     height: 120px;
+        margin-top: 188px;
+            margin-right: 472px;
+                margin-bottom: 48px;
+                margin-left: 472px;
 }
 
 .order-button {
@@ -114,12 +161,25 @@ ul, ol {
         line-height: 24px; 
         letter-spacing: 0.64px;
         line-height: 1.5; 
+        width: 163px;
+        height: 58px;
+        margin-right: 638px;
+        margin-bottom: 187px;
+        margin-left: 639px;
+        
+
 }
 .order-button:hover,
 .order-button:focus {background-color: #404BBF;
 }
 
 /*  Переваги компанії */
+
+.advantages-section {
+    width: 1128px;
+    height: 104px;
+}
+
 .advantages-list {
     display: flex;
     gap: 24px;
@@ -158,6 +218,7 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 .team-list-item {
     background-color: #FFFFFF;
+    flex-basis: calc((100%-72px)/4);
 }
 .heading {
 color: var(--NAVY-BLUE, #2E2F42);
@@ -171,11 +232,21 @@ color: var(--NAVY-BLUE, #2E2F42);
         line-height: 1.11;
     }
 
-.portfolio-list 
-{display: flex;
+.portfolio-list { 
+    display: flex;
 flex-wrap: wrap;
 gap: 24px;
 }
+
+img {
+    display: block;
+    max-width: 100%;
+}
+ .thrumb {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+ }
 
 /* Футер */
 .footer {
