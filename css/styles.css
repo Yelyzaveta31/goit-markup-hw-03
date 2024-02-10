@@ -1,0 +1,153 @@
+body {
+font-family: "Roboto", sans-serif;
+color: var(--SLATE, #434455);
+background-color: #FFF;
+}
+
+/*  Шапка веб-сторінки  */
+.logo {
+    color: var(--IRIS, #4D5AE5);
+        font-family: Raleway, sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 1.17;
+}
+.logo-top {
+    color: var(--NAVY-BLUE, #2E2F42);
+}
+
+ul{
+    list-style-type: none;
+}
+.header-link {
+    color: var(--NAVY-BLUE, #2E2F42);
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        text-decoration: none;
+        line-height: 1.5;
+}
+.nav-list-item .header-link:hover {color: #404BBF;}
+.nav-list-item .header-link:focus 
+ { color: #404BBF;
+}
+.address-link { font-style: normal;
+}
+
+ .adresses-link-subtitle {
+       color:#434455;
+        font-family: Roboto,sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        text-decoration: none;
+        line-height: 1.5;
+     
+}
+.adresses-link-item .adresses-link-subtitle:hover { color:  #404bbf}
+.adresses-link-item .adresses-link-subtitle:focus { color:  #404bbf}
+
+/*   Замовити послуги */
+.business-section {
+    background-color:var(--NAVY-BLUE, #2E2F42);}
+    .main-title {
+    color: var(--WHITE, #FFF);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 1.12px;
+        line-height: 1.07 ;
+}
+
+.order-button {
+        background: var(--IRIS, #4D5AE5);
+        color: var(--WHITE, #FFF);
+        cursor: pointer;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; 
+        letter-spacing: 0.64px;
+        line-height: 1.5; 
+}
+.order-button:hover,
+.order-button:focus {background-color: #404BBF;
+}
+
+/*  Переваги компанії */
+
+.title {
+color: var(--NAVY-BLUE, #2E2F42);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+
+}
+
+.text {
+    color: var(--SLATE, #434455);
+    
+        font-family: Roboto;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        line-height: 1.5;
+}
+
+/* Наша команда */
+.team-section {
+    background: var(--CLOUD, #F4F4FD);
+}
+
+.team-list-item {
+    background-color: #FFFFFF;
+}
+.heading {
+color: var(--NAVY-BLUE, #2E2F42);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+        line-height: 1.11;
+    }
+
+
+/* Футер */
+.footer {
+    background: var(--NAVY-BLUE, #2E2F42);}
+    .footer-text {
+    color: var(--CLOUD, #F4F4FD);
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 24px;
+        letter-spacing: 0.32px;
+        line-height: 1.5;
+}
+
+.logo-bottom {
+    color: var(--CLOUD, #F4F4FD);
+        font-family: Raleway;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21px;
+        letter-spacing: 0.54px;
+        text-transform: uppercase;
+        line-height: 1.17;
+}
