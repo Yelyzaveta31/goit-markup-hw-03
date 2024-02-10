@@ -4,7 +4,40 @@ color: var(--SLATE, #434455);
 background-color: #FFF;
 }
 
+.page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 1158px;
+}
+
+main {
+    flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p { 
+    margin: 0;
+}
 /*  Шапка веб-сторінки  */
+.container {
+    display:flex;
+
+
+}
+
+nav {
+    display: flex;
+}
+
+.nav-list 
+{ display: flex;}
+
 .logo {
     color: var(--IRIS, #4D5AE5);
         font-family: Raleway, sans-serif;
@@ -20,8 +53,10 @@ background-color: #FFF;
     color: var(--NAVY-BLUE, #2E2F42);
 }
 
-ul{
-    list-style-type: none;
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .header-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -38,6 +73,7 @@ ul{
  { color: #404BBF;
 }
 .address-link { font-style: normal;
+    display: flex;
 }
 
  .adresses-link-subtitle {
@@ -84,7 +120,10 @@ ul{
 }
 
 /*  Переваги компанії */
-
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
 .title {
 color: var(--NAVY-BLUE, #2E2F42);
     font-family: Roboto;
@@ -112,6 +151,11 @@ color: var(--NAVY-BLUE, #2E2F42);
     background: var(--CLOUD, #F4F4FD);
 }
 
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
 .team-list-item {
     background-color: #FFFFFF;
 }
@@ -127,6 +171,11 @@ color: var(--NAVY-BLUE, #2E2F42);
         line-height: 1.11;
     }
 
+.portfolio-list 
+{display: flex;
+flex-wrap: wrap;
+gap: 24px;
+}
 
 /* Футер */
 .footer {
