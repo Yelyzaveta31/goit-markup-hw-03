@@ -38,28 +38,39 @@ p {
     padding-right: 0;
     padding-bottom: 120px;
     padding-left: 0;
-    width: 100%;
 }
 /*  Шапка веб-сторінки  */
 
-header {
+.header {
+    display: flex;
     width: 1440px;
-    height: 72px;
+    border-bottom: 1px solid #e7e9fc
+
 }
 .container {
     display:flex;
-    border: 1440px;
 }
 
-nav {
+.header-container {
     display: flex;
+    flex-direction: row;
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .nav-list 
 { display: flex;
-margin-top: 24px;
-margin-right: 332px;
-margin-bottom: 24px;
+padding-top: 24px;
+padding-right: 332px;
+padding-bottom: 24px;
+padding-left: 0;
 gap: 40px;
 
 }
@@ -78,7 +89,7 @@ gap: 40px;
         margin-top: 24px;
         margin-right: 76px;
         margin-bottom: 24px;
-        margin-left: 156px;
+       
 }
 .logo-top {
     color: var(--NAVY-BLUE, #2E2F42);}
@@ -98,6 +109,7 @@ ul, ol {
         letter-spacing: 0.32px;
         text-decoration: none;
         line-height: 1.5;
+        padding: 24px 0;
 }
 .nav-list-item .header-link:hover {color: #404BBF;}
 .nav-list-item .header-link:focus 
@@ -106,9 +118,10 @@ ul, ol {
 .address-link { font-style: normal;
     display: flex;
  flex-direction: row;
-    margin-top: 24px;
-        margin-right: 156px;
-        margin-bottom: 24px;
+ padding-top: 24px;
+ margin-right: 0;
+        padding-bottom: 24px;
+        padding-left: 0;
         gap: 40px;
 }
 
@@ -127,14 +140,13 @@ ul, ol {
 .adresses-link-item .adresses-link-subtitle:focus { color:  #404bbf}
 
 /*   Замовити послуги */
-.business-section {
+/* Перша секція */
+.section-business {
     background-color:var(--NAVY-BLUE, #2E2F42);
     width: 1440px;
-    height: 600px;
+    padding: 188px 0
 }
-.business-container {
-        display: flex;}
-                 
+      
     .main-title {
     color: var(--WHITE, #FFF);
         text-align: center;
@@ -144,8 +156,7 @@ ul, ol {
         line-height: 60px;
         letter-spacing: 1.12px;
         line-height: 1.07 ;
-        width: 496px;
-     height: 120px;
+    max-width: 496px;
         margin-top: 188px;
             margin-right: 472px;
                 margin-bottom: 48px;
@@ -163,12 +174,11 @@ ul, ol {
         line-height: 24px; 
         letter-spacing: 0.64px;
         line-height: 1.5; 
-        width: 163px;
-        height: 58px;
-        margin-right: 638px;
-        margin-bottom: 187px;
-        margin-left: 639px;
-        
+        border: none;
+        display: block;
+        min-width: 160px;
+        height: 56px;
+        border-radius: 4px;
 
 }
 .order-button:hover,
@@ -181,10 +191,7 @@ ul, ol {
     display: flex;
     width: 1128px;
     height: 104px;
-    margin-top: 120px;
-    margin-right: 156px;
-    margin-bottom: 116px;
-    margin-left: 156px;
+  
 }
 
 .advantages-list {
