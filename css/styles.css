@@ -10,13 +10,6 @@ color: var(--SLATE, #434455);
 background-color: #FFF;
 }
 
-.page-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    width: 1440px;
-    justify-content: center;
-}
 
 main {
     flex-grow: 1;
@@ -48,28 +41,24 @@ section {
     padding-left: 0;
 }
 
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 1158px;
+}
+
 /*  Шапка веб-сторінки  */
 
 .header {
     display: flex;
-    width: 1440px;
-    border-bottom: 1px solid #e7e9fc
-
-}
-.container {
-    display:flex;
+    border-bottom: 1px solid #e7e9fc;
+    align-items: center;
 }
 
-.header-container {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .nav {
     display: flex;
-    flex-direction: row;
+   
 }
 
 .logo {
@@ -158,17 +147,22 @@ section {
 
 .section-business {
     background-color:var(--NAVY-BLUE, #2E2F42);
-    width: 1440px;
-    height: 600px;;
-    padding: 188px 0
+    padding: 188px 0;
 }
 
-.container-business {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-      
+  .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+  }
     .main-title {
     color: var(--WHITE, #FFF);
         text-align: center;
@@ -179,22 +173,7 @@ section {
         letter-spacing: 1.12px;
         line-height: 1.07 ;
     max-width: 496px;
-    margin-top: 0px;
-                margin-left: 472px;
-                margin-bottom: 0;
-}
-
-.button {
-    display: block;
-    border: none;
-    border-radius: 4px;
-    padding: 16px 32px;
-    border-radius: 4px;
-    text-align: nowrap;
-margin-top: 47px;
-margin-right: 0;
-margin-bottom: 187px;
-margin-left: 639px;
+    
 }
 .order-button {
         background: var(--IRIS, #4D5AE5);
@@ -207,9 +186,12 @@ margin-left: 639px;
         line-height: 24px; 
         letter-spacing: 0.64px;
         line-height: 1.5; 
-    min-width: 169px;
-    width: 163px;
-        height: 58px;
+        display: block;
+        border: none;
+        border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
+    
 }
 
 .order-button:hover,
@@ -227,8 +209,8 @@ margin-left: 639px;
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-left: 156px;
 }
+ 
 
 .advantages-list-item {
     width: calc((100% - 72px) / 4);
@@ -245,6 +227,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     letter-spacing: 0.4px;
     line-height: 1.2;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .text {
@@ -259,34 +242,19 @@ color: var(--NAVY-BLUE, #2E2F42);
 }
 
 /* Наша команда */
+/* Секція 3 */
 .team-section {
     background: var(--CLOUD, #F4F4FD);
-    width: 1440px;
-    height: 732px;
-
+    padding: 120px 0
 }
 
-.team-container {
-    padding: 32px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center
-}
+
 .team-list {
     display: flex;
     gap: 24px;
-    padding-right: 156px;
-    padding-bottom: 116px;
-    padding-left: 156px;
 }
 
-.team-list-item {
-    background-color: #FFFFFF;
-    flex-basis: calc((100%-72px)/4);
-    border-radius: 0px 0px 4px 4px;
-  
-    
-}
+
 .heading-team {
 color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -296,23 +264,42 @@ color: var(--NAVY-BLUE, #2E2F42);
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-        line-height: 1.11;
-        padding-top: 124px;
-        padding-right: 639px;
-        padding-bottom: 72px;
-        padding-left: 639px;
-        width: 162px;
-        white-space: nowrap;
+    line-height: 1.11;
+    width: 162px;
+    height: 40px;
+     white-space: nowrap;
+     margin-bottom: 72px; 
+
     }
+    .team-list-item {
+        background-color: #FFFFFF;
+        flex-basis: calc((100%-72px)/4);
+        border-radius: 0px 0px 4px 4px;
+     
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: column;
+        padding: 32px 0;
+        text-align: center;
+    }
+   
 
     /* Портфоліо */
+    /* Четверта секція */
+
     .portfolio-section {
-        background: var(--WHITE, #FFF);
-        width: 1440px;
-        height: 1000px;
+    background: var(--WHITE, #FFF);
+    padding-top: 120px;
+    padding-bottom: 120px; 
     }
     
-
+.container-portfolio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
     .heading-portfolio {
         color: var(--NAVY-BLUE, #2E2F42);
         text-align: center;
@@ -323,18 +310,16 @@ color: var(--NAVY-BLUE, #2E2F42);
         letter-spacing: 0.72px;
         text-transform: capitalize;
         line-height: 1.11;
-        padding-top: 124px;
-        padding-right: 611px;
-        padding-bottom: 72px;
-        padding-left: 611px;
         width: 218px;
+        margin-bottom: 72px; 
         white-space: nowrap;}
         
         .portfolio-list { 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px; 
     padding-right: 156px;
     padding-bottom: 120px;
     padding-left: 156px;
@@ -342,6 +327,12 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 .portfolio-list-item {
 flex-basis: calc((100%-48px)/3);
+}
+
+.portfolio-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc; 
+    border-top: none; 
 }
 
 img {
@@ -353,23 +344,11 @@ img {
 /* Футер */
 .footer {
     background: var(--NAVY-BLUE, #2E2F42);
-width: 1440px;
-height: 312px;}
-
-.container-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 264px;
-    height: 112px;
-    margin-top: 140px;
-    margin-right: 1020px;
-    margin-bottom: 100px;
-    margin-left: 156px;
-
+    padding: 100px 0;
 }
 
     .footer-text {
+        display: flex;
     color: var(--CLOUD, #F4F4FD);
         font-family: Roboto;
         font-size: 16px;
@@ -377,10 +356,12 @@ height: 312px;}
         line-height: 24px;
         letter-spacing: 0.32px;
         line-height: 1.5;
+        width: 264px;
+        padding-top: 16px;
 }
 
 .logo-bottom {
-    color: var(--CLOUD, #F4F4FD);
+    color: var(--CLOUD, #FFF);
         font-family: Raleway;
         font-size: 18px;
         font-weight: 700;
@@ -401,9 +382,9 @@ color: var(--IRIS, #4D5AE5);
     text-transform: uppercase;
     text-decoration: none;
     line-height: 1.17;
-    display: flex;
-        margin-top: 0;
-        margin-right: 76px;
-        margin-bottom: 24px;
-        margin-left: 0;
+    display: inline-block;
+    margin-left: 156px;
+    margin-bottom: 0;
+
+
 }
