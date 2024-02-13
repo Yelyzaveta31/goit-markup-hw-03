@@ -14,7 +14,7 @@ background-color: #FFF;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 1158px;
+    width: 1440px;
     justify-content: center;
 }
 
@@ -164,9 +164,8 @@ ul, ol {
         line-height: 1.07 ;
     max-width: 496px;
     margin-top: 0;
-            margin-right: 472px;
-            margin-bottom:  0;
                 margin-left: 472px;
+                margin-bottom: 0;
 }
 
 
@@ -183,13 +182,11 @@ ul, ol {
         line-height: 1.5; 
         border: none;
         display: block;
-            min-width: 169px;
-            height: 56px;
-            border-radius: 4px;
-            margin-top: 47px;
-            margin-right: 638px;
-            margin-bottom: 0;
-            margin-left: 639px;
+        min-width: 169px;
+        height: 56px;
+        border-radius: 4px;
+        margin-top: 47px;
+        margin-bottom: 0;
 
         
 
@@ -198,7 +195,6 @@ ul, ol {
 .order-button:focus {background-color: #404BBF;
 }
 
-/*  Переваги компанії */
 /*  друга секція */
 
 .section-advantages {
