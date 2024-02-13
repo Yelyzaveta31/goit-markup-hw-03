@@ -33,7 +33,15 @@ p {
     margin-bottom: 0;
 }
 
-.section {
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+section {
     padding-top: 120px;
     padding-right: 0;
     padding-bottom: 120px;
@@ -55,30 +63,13 @@ p {
 .header-container {
     display: flex;
     flex-direction: row;
-    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: row;
-    align-items: center;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 40px;
-}
-
-.nav-list 
-{ 
-display: flex;
-padding-top: 24px;
-padding-right: 332px;
-padding-bottom: 24px;
-padding-left: 0;
-gap: 40px;
 }
 
 .logo {
@@ -92,20 +83,32 @@ gap: 40px;
         text-decoration: none;
         line-height: 1.17;
         display: flex;
+        flex-direction: row;
+        width: 115px;
         margin-top: 24px;
         margin-right: 76px;
         margin-bottom: 24px;
+        margin-left: 0;
        
 }
 .logo-top {
     color: var(--NAVY-BLUE, #2E2F42);}
 
-ul, ol {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-}
+ .nav-menu {
+            display: flex;
+            gap: 40px;
+        }
+    
+.nav-list {
+            display: flex;
+            padding-top: 24px;
+            padding-right: 332px;
+            padding-bottom: 24px;
+            padding-left: 0;
+            gap: 40px;
+        }
+
+
 .header-link {
     color: var(--NAVY-BLUE, #2E2F42);
         font-family: Roboto, sans-serif;
@@ -117,10 +120,14 @@ ul, ol {
         line-height: 1.5;
         padding: 24px 0;
 }
+
 .nav-list-item .header-link:hover {color: #404BBF;}
 .nav-list-item .header-link:focus 
  { color: #404BBF;
 }
+
+
+
 .address-link { font-style: normal;
     display: flex;
  flex-direction: row;
@@ -130,6 +137,7 @@ ul, ol {
         padding-left: 0;
         gap: 40px;
 }
+
 
  .adresses-link-subtitle {
        color:#434455;
@@ -147,10 +155,18 @@ ul, ol {
 
 /*   Замовити послуги */
 /* Перша секція */
+
 .section-business {
     background-color:var(--NAVY-BLUE, #2E2F42);
     width: 1440px;
+    height: 600px;;
     padding: 188px 0
+}
+
+.container-business {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
       
     .main-title {
@@ -163,12 +179,23 @@ ul, ol {
         letter-spacing: 1.12px;
         line-height: 1.07 ;
     max-width: 496px;
-    margin-top: 0;
+    margin-top: 0px;
                 margin-left: 472px;
                 margin-bottom: 0;
 }
 
-
+.button {
+    display: block;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    text-align: nowrap;
+margin-top: 47px;
+margin-right: 0;
+margin-bottom: 187px;
+margin-left: 639px;
+}
 .order-button {
         background: var(--IRIS, #4D5AE5);
         color: var(--WHITE, #FFF);
@@ -180,17 +207,11 @@ ul, ol {
         line-height: 24px; 
         letter-spacing: 0.64px;
         line-height: 1.5; 
-        border: none;
-        display: block;
-        min-width: 169px;
-        height: 56px;
-        border-radius: 4px;
-        margin-top: 47px;
-        margin-bottom: 0;
-
-        
-
+    min-width: 169px;
+    width: 163px;
+        height: 58px;
 }
+
 .order-button:hover,
 .order-button:focus {background-color: #404BBF;
 }
