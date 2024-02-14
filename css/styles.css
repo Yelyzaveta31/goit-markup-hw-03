@@ -49,6 +49,10 @@ section {
     margin: 0 auto;
 }
 
+.container header {
+    display: flex;
+}
+
 /*  Шапка веб-сторінки  */
 
 .header {
@@ -84,19 +88,17 @@ section {
 .logo-top {
     color: var(--NAVY-BLUE, #2E2F42);}
 
- .nav-menu {
-            display: flex;
-            gap: 40px;
-        }
-    
-.nav-list {
-            display: flex;
-            gap: 40px;
-        }
+ menu {
+    display: flex;
+    gap: 40px;
+ }
   
 .nav-list-item {
-    padding: 24px 0
+    padding: 24px 0;
+    list-style-type: none;
+    
 }
+
 
 
 .header-link {
@@ -179,7 +181,7 @@ section {
         border: none;
         border-radius: 4px;
         min-width: 169px;
-        min-height: 58px;
+        height: 56px;
         padding-top: 16px;
         padding-right: 26px; 
         padding-bottom: 18px;
@@ -319,7 +321,7 @@ color: var(--NAVY-BLUE, #2E2F42);
 }
 
 .portfolio-list-item {
-flex-basis: calc((100%-48px)/3);
+width: calc((100%-48px)/3);
 }
 
 .portfolio-container {
@@ -375,5 +377,6 @@ color: var(--IRIS, #4D5AE5);
     text-decoration: none;
     line-height: 1.17;
     display: inline-block;
+    margin-bottom: 16px;
 
 }
