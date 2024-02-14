@@ -23,7 +23,7 @@ h5,
 h6,
 p { 
     margin: 0;
-    margin-bottom: 0;
+    padding: 0;
 }
 
 ul,
@@ -32,6 +32,7 @@ ol {
     padding: 0;
     list-style: none;
     display: flex;
+    list-style-type: none;
 }
 
 section {
@@ -45,6 +46,7 @@ section {
     margin: 0 auto;
     padding: 0 15px;
     width: 1158px;
+    margin: 0 auto;
 }
 
 /*  Шапка веб-сторінки  */
@@ -153,11 +155,11 @@ section {
         line-height: 60px;
         letter-spacing: 1.12px;
         line-height: 1.07;
-        max-width: 496px; 
-        padding-bottom: 47px;   
+        max-width: 496px;  
         letter-spacing: 0.02em;
         text-align: center;
         margin: 0 auto;
+        margin-bottom: 47px;
 }
 
 
@@ -177,7 +179,11 @@ section {
         border: none;
         border-radius: 4px;
         min-width: 169px;
-        height: 56px; 
+        min-height: 58px;
+        padding-top: 16px;
+        padding-right: 26px; 
+        padding-bottom: 18px;
+        padding-left: 32px;
         margin: 0 auto;
 }
 
@@ -264,7 +270,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     letter-spacing: 0.72px;
     text-transform: capitalize;
     line-height: 1.11;
-     padding-bottom: 72px; 
+      margin-bottom: 72px; 
      text-align: center;
     }
     .team-list-item {
@@ -291,11 +297,7 @@ color: var(--NAVY-BLUE, #2E2F42);
     padding-bottom: 120px; 
     }
     
-.container-portfolio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
+
     .heading-portfolio {
         color: var(--NAVY-BLUE, #2E2F42);
         text-align: center;
@@ -306,8 +308,7 @@ color: var(--NAVY-BLUE, #2E2F42);
         letter-spacing: 0.72px;
         text-transform: capitalize;
         line-height: 1.11;
-        margin-bottom: 72px; 
-        white-space: nowrap;}
+        margin-bottom: 72px; }
         
         .portfolio-list { 
     display: flex;
