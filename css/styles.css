@@ -95,13 +95,6 @@ img {
     gap: 40px;
  }
   
-.nav-list-item {
-    padding: 24px 0;
-    list-style-type: none;
-    
-}
-
-
 
 .header-link {
     color: var(--NAVY-BLUE, #2E2F42);
@@ -112,6 +105,7 @@ img {
         letter-spacing: 0.32px;
         text-decoration: none;
         line-height: 1.5;
+        padding: 24px 0;
 }
 
 .nav-list-item .header-link:hover {color: #404BBF;}
