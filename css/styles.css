@@ -11,9 +11,6 @@ background-color: #FFF;
 }
 
 
-main {
-    flex-grow: 1;
-}
 
 h1,
 h2,
@@ -42,13 +39,16 @@ section {
     padding-left: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 .container {
     margin: 0 auto;
     padding: 0 15px;
     width: 1158px;
-    margin: 0 auto;
 }
-
 
 
 /*  Шапка веб-сторінки  */
@@ -58,7 +58,7 @@ section {
   
 }
 
-.header > .container {
+.header-cont {
     display: flex;
     align-items: center;
 }
@@ -90,7 +90,7 @@ section {
 .logo-top {
     color: var(--NAVY-BLUE, #2E2F42);}
 
- .menu {
+ .nav-menu {
     display: flex;
     gap: 40px;
  }
@@ -332,10 +332,6 @@ color: var(--NAVY-BLUE, #2E2F42);
     border-top: none; 
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
 
 
 /* Футер */
