@@ -51,14 +51,15 @@ section {
 
 .header {
     display: flex;
+    flex-direction: row;
     border-bottom: 1px solid #e7e9fc;
     align-items: center;
 }
 
 
 .nav {
-    display: flex;
-   
+    display: flex; 
+    align-items: center; 
 }
 
 .logo {
@@ -74,10 +75,8 @@ section {
         display: flex;
         flex-direction: row;
         width: 115px;
-        margin-top: 24px;
         margin-right: 76px;
-        margin-bottom: 24px;
-        margin-left: 0;
+
        
 }
 .logo-top {
@@ -90,12 +89,12 @@ section {
     
 .nav-list {
             display: flex;
-            padding-top: 24px;
-            padding-right: 332px;
-            padding-bottom: 24px;
-            padding-left: 0;
             gap: 40px;
         }
+  
+.nav-list-item {
+    padding: 24px 0
+}
 
 
 .header-link {
@@ -107,7 +106,6 @@ section {
         letter-spacing: 0.32px;
         text-decoration: none;
         line-height: 1.5;
-        padding: 24px 0;
 }
 
 .nav-list-item .header-link:hover {color: #404BBF;}
@@ -119,12 +117,8 @@ section {
 
 .address-link { font-style: normal;
     display: flex;
- flex-direction: row;
- padding-top: 24px;
- margin-right: 0;
-        padding-bottom: 24px;
-        padding-left: 0;
-        gap: 40px;
+    gap: 40px;
+    padding-left: 317px;
 }
 
 
@@ -136,6 +130,7 @@ section {
         letter-spacing: 0.32px;
         text-decoration: none;
         line-height: 1.5;
+        text-wrap: nowrap;
    
       
 }
@@ -150,31 +145,23 @@ section {
     padding: 188px 0;
 }
 
-  .visually-hidden {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      margin: -1px;
-      border: 0;
-      padding: 0;
-
-      white-space: nowrap;
-      clip-path: inset(100%);
-      clip: rect(0 0 0 0);
-      overflow: hidden;
-  }
     .main-title {
     color: var(--WHITE, #FFF);
-        text-align: center;
         font-family: Roboto;
         font-size: 56px;
         font-weight: 700;
         line-height: 60px;
         letter-spacing: 1.12px;
-        line-height: 1.07 ;
-    max-width: 496px;
-    
+        line-height: 1.07;
+        max-width: 496px; 
+        padding-bottom: 47px;   
+        letter-spacing: 0.02em;
+        text-align: center;
+        margin: 0 auto;
 }
+
+
+
 .order-button {
         background: var(--IRIS, #4D5AE5);
         color: var(--WHITE, #FFF);
@@ -190,8 +177,8 @@ section {
         border: none;
         border-radius: 4px;
         min-width: 169px;
-        height: 56px;
-    
+        height: 56px; 
+        margin: 0 auto;
 }
 
 .order-button:hover,
@@ -217,6 +204,20 @@ section {
 
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .title {
 color: var(--NAVY-BLUE, #2E2F42);
     font-family: Roboto;
@@ -227,7 +228,6 @@ color: var(--NAVY-BLUE, #2E2F42);
     letter-spacing: 0.4px;
     line-height: 1.2;
     margin-bottom: 8px;
-    text-align: center;
 }
 
 .text {
@@ -257,7 +257,6 @@ color: var(--NAVY-BLUE, #2E2F42);
 
 .heading-team {
 color: var(--NAVY-BLUE, #2E2F42);
-    text-align: center;
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
@@ -265,11 +264,8 @@ color: var(--NAVY-BLUE, #2E2F42);
     letter-spacing: 0.72px;
     text-transform: capitalize;
     line-height: 1.11;
-    width: 162px;
-    height: 40px;
-     white-space: nowrap;
-     margin-bottom: 72px; 
-
+     padding-bottom: 72px; 
+     text-align: center;
     }
     .team-list-item {
         background-color: #FFFFFF;
@@ -310,7 +306,6 @@ color: var(--NAVY-BLUE, #2E2F42);
         letter-spacing: 0.72px;
         text-transform: capitalize;
         line-height: 1.11;
-        width: 218px;
         margin-bottom: 72px; 
         white-space: nowrap;}
         
@@ -320,9 +315,6 @@ color: var(--NAVY-BLUE, #2E2F42);
     flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px; 
-    padding-right: 156px;
-    padding-bottom: 120px;
-    padding-left: 156px;
 }
 
 .portfolio-list-item {
@@ -348,7 +340,6 @@ img {
 }
 
     .footer-text {
-        display: flex;
     color: var(--CLOUD, #F4F4FD);
         font-family: Roboto;
         font-size: 16px;
@@ -383,8 +374,5 @@ color: var(--IRIS, #4D5AE5);
     text-decoration: none;
     line-height: 1.17;
     display: inline-block;
-    margin-left: 156px;
-    margin-bottom: 0;
-
 
 }
