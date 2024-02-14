@@ -90,7 +90,7 @@ section {
 .logo-top {
     color: var(--NAVY-BLUE, #2E2F42);}
 
- menu {
+ .menu {
     display: flex;
     gap: 40px;
  }
