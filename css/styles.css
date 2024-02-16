@@ -145,8 +145,8 @@ img {
     max-width: 1440px;
     margin: 0 auto;
     background-image:
-    url(../images/Dark-bg.svg),
-     url(../images/people-office\ 1.svg);
+    url(../images/Dark-bg.jpg),
+    url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
